@@ -51,3 +51,9 @@ jobs:
           method: kubeconfig
           kubeconfig: ${{ secrets.K8S_CONFIG }}
           
+      - name: Deploy MongoDB
+        uses: Azure/k8s-deploy@v1
+        with:
+          manifests: |
+            k8s/mongodb/deployment.yml
+            k8s/mongodb/service.yml
