@@ -63,5 +63,5 @@ jobs:
         with:
           manifests: |
             k8s/app/deployment.yml
-            k8s/app/service.yml
+            k8s/app/service-cloud.yml
           images: schleuss/rotten-potatoes:b${{ github.run_number }}

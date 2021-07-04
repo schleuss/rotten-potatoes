@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: movies
-          image: schleuss/rotten-potatoes:v1
+          image: schleuss/rotten-potatoes:latest
           ports:
             - containerPort: 5000
           env:
